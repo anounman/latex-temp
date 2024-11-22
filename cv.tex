@@ -8,10 +8,12 @@
 \usepackage{titlesec}
 \usepackage{hyperref}
 \usepackage{ragged2e}
-\usepackage{helvet}
+\usepackage[scaled=0.92]{helvet}  % Only include once
 \usepackage{lmodern}
+\usepackage{fontawesome5}  % Added for icons
+
+% Font configuration
 \renewcommand{\familydefault}{\sfdefault}
-\usepackage[scaled=0.92]{helvet}
 
 % Page layout
 \geometry{left=1in, right=1in, top=0.5in, bottom=0.5in}
@@ -23,25 +25,19 @@
 \hypersetup{
     colorlinks=true,
     urlcolor=black,
-    pdftitle={Professional Resume},
-    pdfauthor={Ankush Das}
+    pdftitle={Professional Resume}
 }
 
-% Custom section formatting
-\titleformat{\section}{\large\bfseries}{}{0pt}{\uppercase}
-\titlespacing*{\section}{0pt}{12pt}{6pt}
-
 \begin{document}
-% Header
 \begin{center}
-    \textbf{\Large Ankush Das} \\[0.2em]
+    \textbf{\Large [NAME]} \\[0.2em]
     \small 
-    \href{mailto:envelopeankushdas67824@gmail.com}{\faEnvelope{} envelopeankushdas67824@gmail.com} \quad 
-    \faPhone{} +49 15751635689 \quad 
-    \faMapMarker{} Saarbrücken, Germany \\[0.2em]
-    \href{https://github.com/anounman}{\faGithub{} anounman} \quad 
-    \href{https://linkedin.com/in/anounman}{\faLinkedin{} anounman} \quad 
-    \href{https://anounman.app}{\faGlobe{} anounman.app}
+    \href{mailto:[EMAIL]}{\faIcon{envelope} [EMAIL]} \quad 
+    \faIcon{phone} [PHONE] \quad 
+    \faIcon{map-marker-alt} [LOCATION] \\[0.2em]
+    \href{[GITHUB_URL]}{\faIcon{github} [GITHUB]} \quad 
+    \href{[LINKEDIN_URL]}{\faIcon{linkedin} [LINKEDIN]} \quad 
+    \href{[WEBSITE_URL]}{\faIcon{globe} [WEBSITE]}
 \end{center}
 
 \vspace{0.5em}
